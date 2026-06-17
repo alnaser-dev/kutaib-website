@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#6C4FE0" />
+  <meta name="theme-color" content="#6248DB" />
   <meta name="robots" content="noindex, nofollow" />
   <title>شروط الاستخدام — كتيب</title>
   <link rel="icon" href="../images/logo.png" type="image/png" />
   <link rel="apple-touch-icon" href="../images/logo.png" />
   <style>
     :root {
-      --accent: #6C4FE0;
-      --accent-strong: #5a3fd0;
-      --accent-soft: rgba(108, 79, 224, 0.08);
-      --accent-ring: rgba(108, 79, 224, 0.16);
+      --accent: #6248DB;
+      --accent-strong: #4F36C4;
+      --accent-soft: rgba(98, 72, 219, 0.08);
+      --accent-ring: rgba(98, 72, 219, 0.16);
       --bg-grad-a: #efeafc;
       --bg-grad-b: #f6f5fb;
       --surface: #ffffff;
@@ -30,10 +30,10 @@
     }
     @media (prefers-color-scheme: dark) {
       :root {
-        --accent: #8a72f0;
-        --accent-strong: #9b86f5;
-        --accent-soft: rgba(138, 114, 240, 0.14);
-        --accent-ring: rgba(138, 114, 240, 0.22);
+        --accent: #9578F5;
+        --accent-strong: #A88FF7;
+        --accent-soft: rgba(149, 120, 245, 0.14);
+        --accent-ring: rgba(149, 120, 245, 0.22);
         --bg-grad-a: #14111f;
         --bg-grad-b: #0c0c12;
         --surface: #16151f;
@@ -118,8 +118,8 @@
 
     /* Footer */
     footer { padding: 16px 0 36px; text-align: center; }
-    .foot-brand { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 12px; }
-    .foot-brand .logo { width: 32px; height: 32px; border-radius: 10px; display: block; object-fit: cover; }
+    .foot-brand { margin-bottom: 12px; }
+    .foot-wordmark { height: 30px; width: auto; display: block; margin: 0 auto; }
     .foot-links { display: flex; flex-wrap: wrap; gap: 4px 20px; justify-content: center; margin-bottom: 10px; }
     .foot-links a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 600; padding: 4px 0; }
     .copy { color: var(--faint); font-size: 12px; }
@@ -137,7 +137,7 @@
   <nav>
     <a class="brand" href="../">
       <img class="logo" src="../images/logo.png" alt="كتيب" width="40" height="40" />
-      <span class="name">كتيب</span>
+      <span class="name">كُتَيّب</span>
     </a>
     <a class="nav-cta" href="../">الصفحة الرئيسية</a>
   </nav>
@@ -328,8 +328,10 @@
 
   <footer>
     <div class="foot-brand">
-      <img class="logo" src="../images/logo.png" alt="كتيب" width="32" height="32" />
-      <strong>كتيب</strong>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="../images/wordmark-dark.png" />
+        <img class="foot-wordmark" src="../images/wordmark-light.png" alt="كُتَيّب" height="30" />
+      </picture>
     </div>
     <div class="foot-links">
       <a href="../">الرئيسية</a>

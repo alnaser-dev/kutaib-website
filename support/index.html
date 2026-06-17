@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#6C4FE0" />
+  <meta name="theme-color" content="#6248DB" />
   <title>الدعم والمساعدة — كتيب</title>
   <meta name="description" content="مركز دعم تطبيق كتيب: أجوبة الأسئلة الشائعة حول التوثيق وذاكرة الزيت وتقرير البيع والخصوصية، وطريقة التواصل معنا." />
   <link rel="icon" href="../images/logo.png" type="image/png" />
   <link rel="apple-touch-icon" href="../images/logo.png" />
   <style>
     :root {
-      --accent: #6C4FE0;
-      --accent-strong: #5a3fd0;
-      --accent-soft: rgba(108, 79, 224, 0.08);
-      --accent-ring: rgba(108, 79, 224, 0.16);
+      --accent: #6248DB;
+      --accent-strong: #4F36C4;
+      --accent-soft: rgba(98, 72, 219, 0.08);
+      --accent-ring: rgba(98, 72, 219, 0.16);
       --bg-grad-a: #efeafc;
       --bg-grad-b: #f6f5fb;
       --surface: #ffffff;
@@ -28,10 +28,10 @@
     }
     @media (prefers-color-scheme: dark) {
       :root {
-        --accent: #8a72f0;
-        --accent-strong: #9b86f5;
-        --accent-soft: rgba(138, 114, 240, 0.14);
-        --accent-ring: rgba(138, 114, 240, 0.22);
+        --accent: #9578F5;
+        --accent-strong: #A88FF7;
+        --accent-soft: rgba(149, 120, 245, 0.14);
+        --accent-ring: rgba(149, 120, 245, 0.22);
         --bg-grad-a: #14111f;
         --bg-grad-b: #0c0c12;
         --surface: #16151f;
@@ -142,8 +142,8 @@
 
     /* Footer */
     footer { padding: 12px 0 56px; text-align: center; }
-    .foot-brand { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 14px; }
-    .foot-brand .logo { width: 34px; height: 34px; border-radius: 10px; display: block; object-fit: cover; }
+    .foot-brand { margin-bottom: 14px; }
+    .foot-wordmark { height: 32px; width: auto; display: block; margin: 0 auto; }
     .foot-links { display: flex; flex-wrap: wrap; gap: 6px 22px; justify-content: center; margin-bottom: 14px; }
     .foot-links a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 600; transition: color .15s ease; }
     .foot-links a:hover { color: var(--accent); }
@@ -172,7 +172,7 @@
   <nav>
     <a class="brand" href="../" style="text-decoration:none;color:inherit">
       <img class="logo" src="../images/logo.png" alt="كتيب" width="44" height="44" />
-      <span class="name">كتيب</span>
+      <span class="name">كُتَيّب</span>
     </a>
     <a class="nav-cta" href="../">الصفحة الرئيسية</a>
   </nav>
@@ -317,8 +317,10 @@
   <!-- Footer -->
   <footer>
     <div class="foot-brand">
-      <img class="logo" src="../images/logo.png" alt="كتيب" width="34" height="34" />
-      <strong>كتيب</strong>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="../images/wordmark-dark.png" />
+        <img class="foot-wordmark" src="../images/wordmark-light.png" alt="كُتَيّب" height="32" />
+      </picture>
     </div>
     <div class="foot-links">
       <a href="../">الرئيسية</a>
